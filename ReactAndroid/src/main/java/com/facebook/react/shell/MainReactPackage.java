@@ -40,7 +40,7 @@ import com.facebook.react.modules.i18nmanager.I18nManagerModule;
 import com.facebook.react.modules.image.ImageLoaderModule;
 import com.facebook.react.modules.intent.IntentModule;
 import com.facebook.react.modules.location.LocationModule;
-import com.facebook.react.modules.netinfo.NetInfoModule;
+// import com.facebook.react.modules.netinfo.NetInfoModule;
 import com.facebook.react.modules.network.NetworkingModule;
 import com.facebook.react.modules.permissions.PermissionsModule;
 import com.facebook.react.modules.share.ShareModule;
@@ -245,14 +245,14 @@ public class MainReactPackage extends LazyReactPackage {
                 return new NetworkingModule(context);
               }
             }),
-        ModuleSpec.nativeModuleSpec(
-            NetInfoModule.class,
-            new Provider<NativeModule>() {
-              @Override
-              public NativeModule get() {
-                return new NetInfoModule(context);
-              }
-            }),
+        // ModuleSpec.nativeModuleSpec(
+        //     NetInfoModule.class,
+        //     new Provider<NativeModule>() {
+        //       @Override
+        //       public NativeModule get() {
+        //         return new NetInfoModule(context);
+        //       }
+        //     }),
         ModuleSpec.nativeModuleSpec(
             PermissionsModule.class,
             new Provider<NativeModule>() {
